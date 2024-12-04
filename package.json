@@ -1,0 +1,14 @@
+{
+  "name": "u2-w2-d3",
+  "version": "1.0.0",
+  "description": "Esercizio Giorno 3 SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vittori",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.82.0"
+  }
+}
