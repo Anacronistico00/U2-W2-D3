@@ -1,7 +1,38 @@
-@use 'partials/reset';
-@use 'partials/buttons';
-@use 'partials/grid';
-@import 'mixins/borderMixin';
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn1 {
+  background-color: #0e6cff;
+}
+
+.btn2 {
+  background-color: #ff8700;
+}
+
+.btn3 {
+  background-color: #4caf50;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+}
 
 header,
 #hero {
@@ -50,7 +81,6 @@ h1 {
     transform: translateY(0);
   }
 }
-
 .description {
   font-size: 1.1rem;
   color: #ffffff;
@@ -75,7 +105,6 @@ h1 {
     transform: translateX(0);
   }
 }
-
 #heroImg {
   width: 30vw;
   height: 40vh;
@@ -84,7 +113,9 @@ h1 {
   position: absolute;
   bottom: -40px;
   right: 100px;
-  @include imgsRadius;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px black;
   transform: translateY(100px);
   animation: fade-slide-in-bottom 1s ease-out forwards;
 }
@@ -99,12 +130,11 @@ h1 {
     transform: translateY(0);
   }
 }
-
 #heroImg img {
   position: absolute;
   width: 100%;
   height: 100%;
-  @include heroImgBorder;
+  border: 1px solid #640fc5;
 }
 
 .imagesDiv {
@@ -115,5 +145,9 @@ h1 {
   overflow: hidden;
   margin: 2px;
   width: 24%;
-  @include imgsRadius;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px black;
 }
+
+/*# sourceMappingURL=style.css.map */

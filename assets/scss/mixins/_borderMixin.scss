@@ -1,0 +1,9 @@
+@mixin imgsRadius {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px black;
+}
+
+@mixin heroImgBorder {
+  border: 1px solid #640fc5;
+}
